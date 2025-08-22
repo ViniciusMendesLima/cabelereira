@@ -1,5 +1,19 @@
-.navbar-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section{
+  margin: 2rem 0;
+}
+
+.home-section {
+  height: 20rem;
+}
+
+
+h2{
+    text-transform: capitalize;
+    font-size: 2rem;
 }

@@ -1,0 +1,11 @@
+.home-container{
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(---bh-photo);
+}
+
+.home-container img {
+    display: block;
+    height: 100%;
+    margin: auto;
+}

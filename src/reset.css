@@ -10,6 +10,7 @@ html{
   width: 100vw;
   background-color: var(---bg);
   padding: 2rem;
+  scroll-behavior: smooth;
 }
 li, a{
   list-style: none;

@@ -1,10 +1,12 @@
 import './reset.css'
 import './App.css'
 import { Navbar } from './components/Navbar';
-import { Services } from './data/services'
+import { ServicesData } from './data/services'
+import { Home } from './pages/Home';
+import { Services } from './pages/Services';
 
 function App() {
-console.log(Services
+console.log(ServicesData
 );
 
 
@@ -12,6 +14,12 @@ console.log(Services
     <>
     <section className='navbar-section'>
       <Navbar/>
+    </section>
+    <section id='home' className="home-section">
+      <Home />
+    </section>
+    <section id='services' className="service-section">
+      <Services/>
     </section>
     </>
   )
