@@ -3,7 +3,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar-name">
-        <h1>Elisangela Lima</h1>
+        <h1>Elisangela Mandes</h1>
       </div>
       <nav className="navbar">
         <input id="menu-humburguer" type="checkbox" />
@@ -21,7 +21,7 @@ const Navbar = () => {
             <a href="#services">serviços</a>
           </li>
           <li>
-            <a href="#contenct">Contato</a>
+            <a href="#contact">Contato</a>
           </li>
         </ul>
       </nav>

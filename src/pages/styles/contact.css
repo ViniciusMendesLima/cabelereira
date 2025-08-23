@@ -1,0 +1,18 @@
+.contact-information{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 1rem;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-item i {
+    color: var(---text-color-secondary);
+}

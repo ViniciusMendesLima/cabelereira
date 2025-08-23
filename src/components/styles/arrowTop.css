@@ -1,0 +1,17 @@
+.arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 1000;
+    width: 3rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    transition: .5s;
+}
+
+.arrow:hover{
+    background-color: var(---bg-services);
+    border: 1px solid var(---text-color-secondary);
+}
