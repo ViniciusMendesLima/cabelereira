@@ -1,69 +1,66 @@
-# React + TypeScript + Vite
+# Elisangela Cabelereira - Site Institucional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site institucional para apresentação dos serviços de estética e beleza oferecidos por Elisangela Cabelereira. Desenvolvido em **React** + **TypeScript** com Vite, o projeto destaca os principais tratamentos, informações de contato e um layout moderno e responsivo.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** (SPA)
+- **TypeScript**
+- **Vite** (build e dev server)
+- **CSS** modularizado
+- **ESLint** (padronização de código)
 
-## Expanding the ESLint configuration
+## 📁 Estrutura do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── App.tsx
+├── main.tsx
+├── assets/
+│   └── services/         # Imagens dos serviços
+├── components/           # Componentes reutilizáveis (Navbar, ServiceCard, etc)
+├── data/
+│   └── services.tsx      # Dados dos serviços
+├── pages/                # Páginas principais (Home, About, Services, Contact)
+└── styles/               # CSS modularizado
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧩 Funcionalidades
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Listagem dos principais serviços de estética e beleza
+- Página de apresentação e contato
+- Layout responsivo e navegação intuitiva
+- Organização por componentes reutilizáveis
+- Tipagem forte com TypeScript
+- Importação dinâmica de imagens dos serviços
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Como rodar o projeto
+
+1. **Clone o repositório:**
+   ```bash
+   git clone <url-do-repo>
+   cd elisangela-cabalereira
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse:**  
+   [http://localhost:5173](http://localhost:5173)
+
+## 📋 Scripts
+
+- `npm run dev` — inicia o servidor de desenvolvimento
+- `npm run build` — gera build de produção
+- `npm run lint` — executa o ESLint
+
+---
+
+Projeto desenvolvido para fins de portfólio e demonstração de habilidades em React, TypeScript e frontend moderno.
