@@ -1,4 +1,4 @@
-import standardImage from "../assets/services/standard.png";
+import standardImage from "../assets/services/standard.webp";
 interface ServiceType {
   name: string;
   description: string;
