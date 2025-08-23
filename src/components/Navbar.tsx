@@ -7,7 +7,7 @@ const Navbar = () => {
       </div>
       <nav className="navbar">
         <input id="menu-humburguer" type="checkbox" />
-
+      
         <label htmlFor="menu-humburguer">
           <div className="menu">
             <span className="hamburguer"></span>
@@ -15,10 +15,10 @@ const Navbar = () => {
         </label>
         <ul className="links">
           <li>
-            <a href="#home">Home</a>
+            <a href="#services">serviços</a>
           </li>
           <li>
-            <a href="#services">serviços</a>
+            <a href="#about">Sobre Mim</a>
           </li>
           <li>
             <a href="#contact">Contato</a>
