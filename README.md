@@ -1,6 +1,6 @@
-# Elisangela Cabelereira - Site Institucional
+# Site Cabelereira - Site Institucional
 
-Site institucional para apresentação dos serviços de estética e beleza oferecidos por Elisangela Cabelereira. Desenvolvido em **React** + **TypeScript** com Vite, o projeto destaca os principais tratamentos, informações de contato e um layout moderno e responsivo.
+Site institucional para apresentação dos serviços de estética e beleza oferecidos por Cabelereira. Desenvolvido em **React** + **TypeScript** com Vite, o projeto destaca os principais tratamentos, informações de contato e um layout moderno e responsivo.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -38,8 +38,8 @@ src/
 
 1. **Clone o repositório:**
    ```bash
-   git clone <url-do-repo>
-   cd elisangela-cabalereira
+   git clone <https://github.com/ViniciusMendesLima/cabelereira.git>
+   cd cabelereira
    ```
 
 2. **Instale as dependências:**
@@ -54,12 +54,6 @@ src/
 
 4. **Acesse:**  
    [http://localhost:5173](http://localhost:5173)
-
-## 📋 Scripts
-
-- `npm run dev` — inicia o servidor de desenvolvimento
-- `npm run build` — gera build de produção
-- `npm run lint` — executa o ESLint
 
 ---
 
