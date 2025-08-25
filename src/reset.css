@@ -7,10 +7,13 @@
 }
 
 html{
-  width: 100vw;
+  width: 100%;
   background-color: var(---bg);
-  padding: 2rem;
   scroll-behavior: smooth;
+}
+
+body{
+  padding: 2rem;
 }
 li, a{
   list-style: none;
