@@ -1,5 +1,5 @@
 import "./reset.css";
-import "./App.css";
+import styles from './App.module.css'
 import { Navbar } from "./components/Navbar";
 import { ServicesData } from "./data/services";
 import { Home } from "./pages/Home";
@@ -13,19 +13,19 @@ function App() {
 
   return (
     <>
-      <section className="navbar-section">
+      <section className={styles.NavbarSection}>
         <Navbar />
       </section>
-      <section id="home" className="home-section">
+      <section id="home" className={styles.HomeSection}>
         <Home />
       </section>
-      <section id="services" className="service-section">
+      <section id="services">
         <Services />
       </section>
-      <section id="about" className="about-section">
+      <section id="about" className={styles.AboutSection}>
         <About />
       </section>
-      <section id="contact" className="contact-section">
+      <section id="contact">
         <Contact />
       </section>
       <ArrowTop/>

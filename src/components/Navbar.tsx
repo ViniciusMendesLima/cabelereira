@@ -1,19 +1,19 @@
-import "./styles/navbar.css";
+import styles from './styles/Navbar.module.css'
 const Navbar = () => {
   return (
     <>
-      <div className="navbar-name">
+      <div className={styles.NavbarName}>
         <h1>Elisangela Mandes</h1>
       </div>
-      <nav className="navbar">
-        <input id="menu-humburguer" type="checkbox" />
+      <nav className={styles.Navbar}>
+        <input id="MenuHumburguer" type="checkbox" />
       
-        <label htmlFor="menu-humburguer">
-          <div className="menu">
-            <span className="hamburguer"></span>
+        <label htmlFor="MenuHumburguer">
+          <div className={styles.Menu}>
+            <span className={styles.Hamburguer}></span>
           </div>
         </label>
-        <ul className="links">
+        <ul className={styles.Links}>
           <li>
             <a href="#services">serviços</a>
           </li>

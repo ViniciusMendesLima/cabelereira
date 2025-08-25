@@ -1,4 +1,5 @@
 import standardImage from "../assets/services/standard.webp";
+import styles from './styles/ServiceCard.module.css'
 interface ServiceType {
   name: string;
   description: string;
@@ -13,7 +14,7 @@ const ServiceCard = ({ services }: ServiceCardProps) => {
   return (
     <>
       {services.map((service) => (
-        <div className="service-Card" key={service.name}>
+        <div className={styles.ServiceCard} key={service.name}>
           <img src={service.imageUrl || standardImage} />
           <h3>{service.name}</h3>
           <p>{service.description}</p>

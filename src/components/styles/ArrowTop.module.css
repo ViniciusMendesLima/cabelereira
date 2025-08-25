@@ -1,4 +1,4 @@
-.arrow {
+.Arrow {
     position: fixed;
     bottom: 20px;
     right: 10px;
@@ -11,7 +11,7 @@
     transition: .5s;
 }
 
-.arrow:hover{
+.Arrow:hover{
     background-color: var(---bg-services);
     border: 1px solid var(---text-color-secondary);
 }

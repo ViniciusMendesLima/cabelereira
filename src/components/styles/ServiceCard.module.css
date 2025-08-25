@@ -1,11 +1,4 @@
-.services-camp{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 1rem;
-}
-.service-Card{
+.ServiceCard{
     background-color: var(---bg-services);
     padding: 2rem;
     max-width: 300px;
@@ -16,14 +9,14 @@
     border-radius: 10px;
 }
 
-.service-Card h3{
+.ServiceCard h3{
     font-size: 1.5rem;
 }
 
-.service-Card p {
+.ServiceCard p {
     font-size: 15px;
     text-align: center;
 }
-.service-Card img{
+.ServiceCard img{
     max-width: 5rem;
 }

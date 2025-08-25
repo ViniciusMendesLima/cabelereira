@@ -1,0 +1,30 @@
+.NavbarSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section{
+  margin: 2rem 0;
+}
+
+.HomeSection {
+  height: 20rem;
+}
+
+
+h2{
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.AboutSection p {
+    font-size: 15px;
+    margin-top: 1.5rem;
+}
+
+.AboutSection hr {
+  border: none; 
+  border-top: 1px solid #d8d3c7;
+  margin-top: 40px;
+}

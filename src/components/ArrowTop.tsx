@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import arrowup from "../assets/arrow-up.svg";
-import "./styles/arrowTop.css";
+import styles from './styles/ArrowTop.module.css'
 
 const ArrowTop = () => {
     const [isVisible, SetIsVisible] = useState(false);
@@ -26,7 +26,7 @@ const ArrowTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="arrow"
+          className={styles.Arrow}
           aria-label="Voltar ao Topo"
         >
           <img src={arrowup} alt="Top" />

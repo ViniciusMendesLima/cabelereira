@@ -1,4 +1,4 @@
-.contact-information{
+.ContactInformation{
     font-size: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -7,12 +7,12 @@
     margin-top: 1rem;
 }
 
-.contact-item{
+.ContactItem{
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.contact-item i {
+.ContactItem i {
     color: var(---text-color-secondary);
 }

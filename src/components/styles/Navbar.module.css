@@ -1,19 +1,19 @@
-.navbar-name h1 {
+.NavbarName h1 {
     font-size: 3rem;
 }
 
-.links{
+.Links{
     display: flex;
     gap: 1.5rem;
     text-transform: capitalize;
 }
 
-.links a:hover{
+.Links a:hover{
     transition: .2s;
     color: var(---text-hover);
 }
 
-.menu {
+.Menu {
     display: none;
     width: 60px;
     height: 60px;
@@ -26,7 +26,7 @@ nav label {
     cursor: pointer;
 }
 
-.hamburguer {
+.Hamburguer {
     background-color: var(---text-color);
     position: relative;
     display: block;
@@ -37,8 +37,8 @@ nav label {
     transition: 0.5s ease-in-out;
 }
 
-.hamburguer::before,
-.hamburguer::after {
+.Hamburguer::before,
+.Hamburguer::after {
     background-color: var(---text-color);
     content: '';
     display: block;
@@ -48,56 +48,56 @@ nav label {
     transition: .2s ease-in-out;
 }
 
-.hamburguer::before{
+.Hamburguer::before{
     top: -10px;
 }
 
-.hamburguer::after{
+.Hamburguer::after{
     bottom: -10px;
 }
 
-.navbar input {
+.Navbar input {
     display: none;
 }
 
-.navbar input:checked ~ label .hamburguer {
+.Navbar input:checked ~ label .Hamburguer {
     transform: rotate(45deg);
 }
 
-.navbar input:checked ~ label .hamburguer::before {
+.Navbar input:checked ~ label .Hamburguer::before {
     transform: rotate(90deg);
     top: 0;
 }
 
-.navbar input:checked ~ label .hamburguer::after {
+.Navbar input:checked ~ label .Hamburguer::after {
     transform: rotate(90deg);
     bottom: 0;
 }
 
 @media (max-width: 600px){
-    .menu {
+    .Menu {
         display: block;
     }
 
-    .navbar input:checked ~ .links {
+    .Navbar input:checked ~ .Links {
         display: block;
     }
 
-    .navbar {
+    .Navbar {
         position: absolute;
         top: 30px;
         right: 20px;
         z-index: 1;
     }
 
-    .navbar .links {
+    .Navbar .Links {
         display: none;
         background-color: rgba(71, 49, 41, .9);
         padding: 5px;
         border-radius: 10px;
     }
 
-    .navbar .links a {
+    .Navbar .Links a {
         color: var(---text-hover);
         text-align: center;
         padding: 20px;
