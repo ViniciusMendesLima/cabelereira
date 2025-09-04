@@ -1,8 +1,7 @@
 import { ServiceCard } from "../components/ServiceCard"
+import { Slider } from "../components/Slider"
 import { ServicesData } from "../data/services"
 import styles from './styles/Services.module.css'
-
-console.log(ServicesData);
 
 const Services = () => {
     return(
@@ -11,6 +10,7 @@ const Services = () => {
         <div className={styles.ServicesCamp}>
         <ServiceCard services={ServicesData}/>
         </div>
+        <Slider/>
         </>
     )
 }
