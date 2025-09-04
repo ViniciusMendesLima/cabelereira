@@ -77,20 +77,13 @@ type ImageCardProps = {
    ```bash
    npm install
    ```
-4. Remova o base do vite.config.js
 
-```bash
-
-   remova codigo-> base: '/cabelereira/',
-
-```
-
-5. **Inicie o servidor de desenvolvimento:**
+3. **Inicie o servidor de desenvolvimento:**
    ```bash
    npm run dev
    ```
 
-6. **Acesse:**  
+4. **Acesse:**  
    [http://localhost:5173](http://localhost:5173)
 
 ---
