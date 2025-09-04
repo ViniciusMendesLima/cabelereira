@@ -1,26 +1,19 @@
 import styles from "./styles/Slider.module.css";
 import { motion } from "motion/react";
+import standardImage from "../assets/imagesSlider/standard_image.webp";
 
-import slider_image_1 from "../assets/imagesSlider/img_1.jpg";
-import slider_image_2 from "../assets/imagesSlider/img_2.jpg";
-import slider_image_3 from "../assets/imagesSlider/img_3.jpg";
-import slider_image_4 from "../assets/imagesSlider/img_4.jpg";
-import slider_image_5 from "../assets/imagesSlider/img_5.jpg";
-import slider_image_6 from "../assets/imagesSlider/img_6.jpg";
-import slider_image_7 from "../assets/imagesSlider/img_7.jpg";
 import { useEffect, useRef, useState } from "react";
 
-const images_slider = [
-  slider_image_1,
-  slider_image_2,
-  slider_image_3,
-  slider_image_4,
-  slider_image_5,
-  slider_image_6,
-  slider_image_7,
-];
+interface ServiceType {
+    imageUrl?: string | null;
+    alt: string;
+}
 
-const Slider = () => {
+type ImageCardProps = {
+    images_Slider: ServiceType[];
+}
+
+const Slider = ({images_Slider}: ImageCardProps) => {
   const carousel = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
 
@@ -44,9 +37,9 @@ const Slider = () => {
         animate={{x: 0}}
         transition={{duration: 0.8}}
         >
-          {images_slider.map((image) => (
-            <motion.div className={styles.Item} key={image}>
-              <img src={image} alt="Text alt" />
+          {images_Slider.map((image) => (
+            <motion.div className={styles.Item} key={image.imageUrl}>
+              <img src={image.imageUrl || standardImage} alt={image.alt} />
             </motion.div>
           ))}
         </motion.div>

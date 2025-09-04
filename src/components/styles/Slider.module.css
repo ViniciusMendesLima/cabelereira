@@ -29,3 +29,10 @@
     cursor: grab;
     overflow: hidden;
 }
+
+@media(max-width: 400px){
+    .Item{
+    min-height: 400px;
+    min-width: 250px;
+}
+}
